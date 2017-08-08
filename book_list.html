@@ -1,0 +1,17 @@
+<div id="book_list">
+	<div id="book_head">
+		<a href="#home" class="show" ng-init="show()">
+			<figure></figure>
+		</a>
+		<p>书单</p>
+		<span></span>
+	</div>
+	<div id="book_body">
+		<ul>
+			<li ng-repeat="i in data.booklist">
+				<figure><img src="{{i.img}}" /></figure>
+				<p ng-bind="i.p"></p>
+			</li>
+		</ul>
+	</div>
+</div>

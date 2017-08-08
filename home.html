@@ -1,0 +1,114 @@
+<header>
+	<div>
+		<a href="#"><img src="img/Icon.png" /></a>
+	</div>
+	<div>
+		<p>豆腐客户端</p>
+		<p>10万部小说漫画免费看</p>
+		
+	</div>
+	<div>
+		<a href="####">下载App</a>
+	</div>
+</header>
+<div class="swiper-container" ng-init="fun()">
+	<div class="swiper-wrapper">
+		<div class="swiper-slide"><img src="img/rWWkIkEwmXxkfS5INSZfqPd7O0A0oxvC4uMImBOQa0fh2x7zCTVVHpzTfWE8.png" /></div>
+		<div class="swiper-slide"><img src="img/xbNH3MWbB5E-V1yVEZUl5Lca7VUfeCsieWC2y0y3PiW7t2b6a3VuUzyiMnPq.jpg" /></div>
+		<div class="swiper-slide"><img src="img/pYnnBDY9n0vH1m7mnHg0PAkgFmWDQXJoLJi4Il15pSCAGHkJTrt62N_xDm5_.jpg" /></div>
+	</div>
+	<div class="search"><a href="#search"><img src="img/search.png"/></a></div>
+</div>
+<div class="list" ng-init="hide()">
+	<div>
+		<p>
+			<a href="#classify"><img src="img/img_home_goods@3x.png" /><span>分类</span></a>
+		</p>
+		<p>
+			<a href="#vipwen"><img src="img/img_home_end@3x.png" /><span>VIP文</span></a>
+		</p>
+		<p>
+			<a href="ranking.html"><img src="img/img_home_rank@3x1.png" /><span>排行</span></a>
+		</p>
+	</div>
+	<div>
+		<p>
+			<a href="#finish"><img src="img/img_home_end@3x.png" /><span>完结</span></a>
+		</p>
+		<p>
+			<a href="#book_list"><img src=" img/img_home_booklist@3x.png" /><span>书单</span></a>
+		</p>
+		<p>
+			<a href="#new"><img src="img/img_home_end@3x.png" /><span>最新</span></a>
+		</p>
+	</div>
+</div>
+<div class="viptxt">
+	<div class="txt_head">
+		<p>VIP推文</p>
+		<p>更多 <span>&gt;</span></p>
+	</div>
+	
+	<div class="books" ng-repeat="i in data.viptui" ng-init="hide()">
+		<a href="#{{i.a}}">
+		<div class="book_img"><img src="img/{{i.img}}" /><i class="{{i.class}}"></i></div>
+		<div class="book_info">
+			<h2 ng-bind="i.bookName"></h2>
+			<p class="p" ng-bind="i.bookInfo"></p>
+			<div>
+				<div><img src="img/{{i.user_img}}" /><span ng-bind="i.userName"></span></div>
+				<div class="tags">
+					<p class="tag" ng-bind="i.tag1"></p>
+					<p class="tag" ng-bind="i.tag2"></p>
+				</div>
+			</div>
+		</div>
+	    </a>
+	</div>
+	
+</div>
+<div class="viptxt">
+	<div class="txt_head">
+		<p>豆腐独家</p>
+		<p>更多 <span>&gt;</span></p>
+	</div>
+	<div class="books" ng-repeat="i in data.doufujia" ng-init="hide()">
+		<a href="#{{i.a}}">
+		
+		<div class="book_img"><img src="img/{{i.img}}" /><i class="{{i.class}}"></i></div>
+		<div class="book_info">
+			<h2 ng-bind="i.bookName"></h2>
+			<p class="p" ng-bind="i.bookInfo"></p>
+			<div>
+				<div><img src="img/{{i.user_img}}" /><span ng-bind="i.userName"></span></div>
+				<div class="tags">
+					<p class="tag" ng-bind="i.tag1"></p>
+					<p class="tag" ng-bind="i.tag2"></p>
+				</div>
+			</div>
+		</div>
+        </a>		
+	</div>
+</div>
+<div class="viptxt">
+	<div class="txt_head">
+		<p>经典完结</p>
+		<p>更多 <span>&gt;</span></p>
+	</div>
+	<div class="books" ng-repeat="i in data.jdian" ng-init="hide()">
+		<a href="#{{i.a}}">
+		<div class="book_img"><img src="img/{{i.img}}" /><i class="{{i.class}}"></i></div>
+		<div class="book_info">
+			<h2 ng-bind="i.bookName"></h2>
+			<p class="p" ng-bind="i.bookInfo"></p>
+			<div>
+				<div><img src="img/{{i.user_img}}" /><span ng-bind="i.userName"></span></div>
+				<div class="tags">
+					<p class="tag" ng-bind="i.tag1"></p>
+					<p class="tag" ng-bind="i.tag2"></p>
+				</div>
+			</div>
+		</div>
+		</a>
+	</div>
+</div>

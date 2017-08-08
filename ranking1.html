@@ -1,0 +1,20 @@
+<div class="vip_list" ng-repeat="i in vipwen">
+	<div class="v_left r_left">
+		<img ng-src="img/{{i.img}}" />
+		<i></i>
+	</div>
+	<div class="v_right r_right">
+		<h1>{{i.bookName}}</h1>
+		<p class="text">{{i.bookInfo}}</p>
+		<div class="user">
+			<p class="user_le">
+				<span><img ng-src="img/{{i.user_img}}"/></span>
+				<em>{{i.userName}}</em>
+			</p>
+			<p class="user_ri" id="ranking_user-ri">
+				<span>..</span>
+				<span>{{i.tag2}}</span>
+			</p>
+		</div>
+	</div>
+</div>

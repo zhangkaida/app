@@ -1,0 +1,34 @@
+<div ng-init="show()" style="background: white;">
+<div class="search_head">
+	<div class="show" >
+		<a href="#home"><img src="img/arrow_nav_back_black@2x.png" /></a>
+	</div>
+	<div>搜索</div>
+	<div></div>
+</div>
+<div class="search_cont">
+	<div class="search_input" >
+		<input type="text" placeholder="请输入作品..." ng-model="cont"/>
+		<p ng-click="search()">搜索</p>
+	</div>
+	<div>
+		<div class="books" ng-repeat="i in data.viptui | filter:cont">
+			<div class="book_img"><img src="img/{{i.img}}" /><i class="{{i.class}}"></i></div>
+			<div class="book_info">
+				<h2 ng-bind="i.bookName"></h2>
+				<p class="p" ng-bind="i.bookInfo"></p>
+				<div>
+					<div><img src="img/{{i.user_img}}" /><span ng-bind="i.userName"></span></div>
+					<div class="tags">
+						<p class="tag" ng-bind="i.tag1"></p>
+						<p class="tag" ng-bind="i.tag2"></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="back show" ng-init="show()">
+		<a href="#home"><img src="img/nav_back_white.png" /></a>
+	</div>
+</div>
+</div>

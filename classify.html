@@ -1,0 +1,19 @@
+<div id="classify">
+	<div id="ify_header">
+		<a href="#home" class="show" ng-init="show()">
+			<figure></figure>
+		</a>
+		<p>分类</p>
+		<span>更多分类</span>
+	</div>
+	<div id="ify_body">
+		<ul>
+			<li ng-repeat="i in data.classify">
+				<figure><img src="img/{{i.h2}}.png" /></figure>
+				<h3 ng-bind="i.h2"></h3>
+				<p ng-bind="i.p"></p>
+			</li>
+		</ul>
+	</div>
+</div>
+
